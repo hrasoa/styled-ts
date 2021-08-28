@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: './src/index.tsx',
@@ -8,6 +9,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Output Management',
     }),
+    new BundleAnalyzerPlugin()
   ],
   output: {
     filename: '[name].bundle.js',
