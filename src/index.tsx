@@ -8,7 +8,7 @@ const App = () => (
     </div>
 );
 
-const root = document.createElement('div');
+const root: HTMLElement = document.createElement('div');
 root.id = 'root';
 document.body.appendChild(root),
 
